@@ -1,6 +1,19 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+
+  function hasTargetSum(array, target) {
+    // Write your algorithm here
+    for(i =0; i< array.length; i++){
+      let complement = target-array[i]
+      for (let j = i + 1; j< array.length; j++) {
+        if (complement === array [j]){
+          return true
+        }
+      }
+    }
+    return false
+  }
+  console.log
+  console.log(hasTargetSum ([22, 19, 4, 6, 30], 41))
+
 
 /* 
   Write the Big O time complexity of your function here
